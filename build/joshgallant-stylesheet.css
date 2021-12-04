@@ -1,0 +1,427 @@
+/* grid */
+.grid {
+    font-size: 20px;
+    display: flex;         
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-height: min-content;
+    min-width: min-content;
+}
+
+.main {
+    margin: auto;
+}
+
+.box_resume {
+    flex: 1;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: min-content;
+    min-width: min-content;
+}
+
+html {
+    font-family: 'Roboto Slab';
+}
+
+.home {
+    background-image: url('home-background.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.not-home {
+    background-color: white;
+}
+
+.main {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+
+.wilburt {
+    background-image: url('wilburt-collage.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.wilburt_title {
+    font-size: 40px;
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.social_media a {
+    margin: 5px;
+}
+
+.social_media a:hover img {
+    padding-bottom: 5px;
+    color: red;
+  }
+
+.resume h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.resume h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.job {
+    margin: 5rem;
+    clear: both;
+    position: relative;
+    color: white;
+}
+
+.job h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.job h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.job p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+
+
+/* Profile Pic */ 
+.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 400px;
+  width: auto;
+  position: relative;
+}
+
+.box_resume img {
+    height: auto;
+    width: 50%;
+    object-fit: contain;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-width: 200px;
+}
+
+/* Titles and Text */ 
+.name {
+    text-align: center;
+    color: black;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%
+    
+}
+
+.name h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.about {
+    clear: both;
+    color: #626262;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.resume {
+    color: 626262;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  }
+
+.skills {
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills table {
+    border-collapse: collapse;
+  }
+  
+.skills th, td {
+    border: 1px solid black;
+  }
+
+.skills caption {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+  
+.skills thead {
+    background-color: blue;
+    color: white;
+  }
+
+/* Nav Menu */ 
+.nav_menu {
+    text-align: right;
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;
+    overflow: auto;
+}
+
+.nav_menu li {
+    display: inline-block;
+    padding: 30px;
+    color: 626262;
+    font-size: 20px;
+    width: auto;
+}
+
+.nav_menu li a{
+    text-decoration: none;
+}
+
+.nav_menu li a:hover {
+    outline: 2px solid #678983;
+    border-radius: 5px;
+    outline-offset: 10px;
+}
+
+.nav_menu li a:visited {
+    color: #626262;
+}
+
+.nav_menu ul {
+    color: #678983;
+    overflow: hidden;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .nav_menu a:not(:first-child) {display: none;}
+    .nav_menu a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .nav_menu.responsive {position: relative;}
+    .nav_menu.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav_menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/* End Nav CSS */
+
+footer {
+    background-color:#181D31;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%
+}
+
+.footer_main {
+    display: flex;         
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.footer_box {
+    align-items:left;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.social {
+    height: auto; 
+    flex: 1;
+    margin-right: 20px;
+}
+
+.social img {
+    width: 5%;
+    height: auto; 
+    float: right;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #678983;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.5s;
+    border: none;
+    color: white;
+    text-decoration: none;
+  }
+  
+.button span {
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: "\2794";
+position: absolute;
+opacity: 0;
+transition: 0.5s;
+right: -20px;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+  
+.form_container {
+    margin: 50px;
+    border: solid blue;
+    font-family: 'Roboto',sans-serif;
+    background-color: white;
+}
+
+fieldset {
+    margin-top: 2rem;
+    width: calc(100% - 2rem);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0;
+}
+
+.formLabel {
+    margin-bottom: 0;
+}
+
+input[type="text"]{
+    width: calc(100% - 2rem);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border-color: gray;
+}
+
+.formError {
+    margin: 0;
+    color: red;
+}
+
+form {
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+input[type="submit"] {
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 3rem;
+    border: 0.1em solid black;
+    color: black;
+    background: white;
+    transition: all 0.2s;
+}
+
+input[type="submit"]:hover{
+    color: white;
+    background-color: black;
+}
+
+#message {
+    line-height:200px;  
+}
