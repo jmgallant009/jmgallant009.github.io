@@ -10,7 +10,6 @@
 .box {
     width: auto;
     flex: 1;
-    display: flex;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -33,8 +32,9 @@
 }
 
 .name h1 {
-    font-size: 7vw;
+    font-size: 4vw;
     margin: 0;
+    text-align: center;
 }
 
 .name h3 {
@@ -177,9 +177,13 @@ Home
 ###############################
 */
 
-html, body {
+html {
     height: 100%;
     background-color: #FEF5ED;
+}
+
+.home {
+    height: 95vh;
 }
 
 .main {
@@ -192,6 +196,7 @@ html, body {
     background-color: #D3E4CD;
 }
 
+
 #home-pic {
     max-width: 100%;
     width: 90%;
@@ -202,7 +207,7 @@ html, body {
 
 .main-home {
     margin-top: 3rem;
-    height: 100vh;
+    min-height: 50%;
     background-image: url(./images/home-background.jpeg);
     /* flex-box thing */
     display: flex;
@@ -211,10 +216,12 @@ html, body {
     justify-content: center;
     background-size: cover; 
     margin-bottom: 30px;
+    color: white;
+    text-shadow: 10px 10px 20px #0c0909;
 }
 
 .main-home h1 {
-    font-size: 5vh;
+    font-size: 5vw;
 }
 
 .main-home p {
