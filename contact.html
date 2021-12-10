@@ -48,13 +48,13 @@
 
     <section class="main">
 
-      <div class="grid">
+      <div class="grid-contact">
 
-        <section class="box">
+        <section class="box-contact">
           <section class="form_container">
             <h1>Contact Me</h1>
-            <p>Note: This form does <strong>not</strong> work. This requires server side php to work which I'd like to do eventually but is outside the scope of this project.</p>
-            <form class="contactForm" name="contactForm" action="mail.php" method="post" nonvalidate onsubmit="return validateForm();">
+
+            <form class="contactForm" name="contactForm" action="https://formspree.io/f/xvolokka" method="post" nonvalidate onsubmit="return validateForm();">
     
                 <!-- Name and Email -->
                 <p class="formLabel" id="nameLabel"></p>
@@ -78,8 +78,8 @@
           </section>
         </section>
 
-        <section class="box">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.713691052613!2d-73.9295138846718!3d40.70230284614574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c047db055db%3A0xd135a6dbbad6215a!2s221%20Troutman%20St%2C%20Brooklyn%2C%20NY%2011237!5e0!3m2!1sen!2sus!4v1637035951069!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section class="box-contact">
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.713691052613!2d-73.9295138846718!3d40.70230284614574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c047db055db%3A0xd135a6dbbad6215a!2s221%20Troutman%20St%2C%20Brooklyn%2C%20NY%2011237!5e0!3m2!1sen!2sus!4v1637035951069!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
       </div>
@@ -88,11 +88,19 @@
 
     <footer>
       <div class="footer-content">
-          <div class="grid" id="icons">
-              <img class="box" id="social-media" src="./images/icons/facebook.png">
-              <img class="box" id="social-media" src="./images/icons/instagram.png">
-              <img class="box" id="social-media" src="./images/icons/linkedin.png">
-              <img class="box" id="social-media" src="./images/icons/email.png">
+          <div class="grid-contact" id="icons">
+              <a href="https://www.facebook.com/joshg2">
+                <img class="box" id="social-media" src="./images/icons/facebook.png" url="facebook.com">
+              </a>
+              <a href="https://www.instagram.com/joshgallant301/">
+                <img class="box" id="social-media" src="./images/icons/instagram.png">
+              </a>
+              <a href="https://www.linkedin.com/in/joshua-gallant/">
+                <img class="box" id="social-media" src="./images/icons/linkedin.png">
+              </a>
+              <a href="mailto:jmgallant301@gmail.com">
+                <img class="box" id="social-media" src="./images/icons/email.png">
+              </a>
           </div>
 
           <div>
