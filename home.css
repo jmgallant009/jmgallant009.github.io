@@ -540,8 +540,7 @@ Contact
 */
 .image-gallery {
     border: 1px solid #ccc;
-    padding: 0 6px;
-    display: flex;
+    padding: 0 6px; 
 }
 
 .image-gallery img:hover {
@@ -555,17 +554,36 @@ Contact
     display: flex;
 }
 
+.image-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
 
 @media only screen and (max-width: 700px) {
     .image-gallery img{
-        width: 49.99999%;
+        width: 100%;
         margin: 6px 0;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .image-gallery {
         width: 100%;
+        display: inline-block;
+    }
+
+    .image-row {
+        display: inline-block;
     }
 }
 
