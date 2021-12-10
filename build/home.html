@@ -8,8 +8,9 @@
     <title>Josh Gallant - Home</title>
 
     <!-- External CSS -->
-    <link href="joshgallant-stylesheet.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- External JS -->
     <script type="text/javascript" src="main.js"></script>
@@ -17,60 +18,67 @@
 
 <body class="home">
 
-    <section class="main">
-
-        <!-- Nav Menu -->
-        <nav class="nav_menu" id="nav_menu">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="resume.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="wilburt.html">My Cat</a></li>
-                <li>
-                    <a href="javascript:void(0);" class="hamburger" onclick="hamburgerNav()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
 
         <!-- Name and Titles-->
         <section class="name">
-                <h1>Josh Gallant</h1>
-                <h3>Solutions Architect at <a href="https://www.ordergroove.com/">Ordergroove Inc.</a></h3>
-
-            <a href="aboutme.html" class="button">
-                <span>
-                    About Me
-                </span>
-            </a>
+            <h1>Josh Gallant</h1>
         </section>
 
+        <!-- Nav Menu -->
+        <nav class="nav_bar">
+            <ul class="nav_menu" id="nav_menu">
+                <li class="nav_item">
+                    <a href="home.html" class="nav_link">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a href="aboutme.html" class="nav_link">About</a>
+                </li>
+                <li class="nav_item">
+                    <a href="resume.html" class="nav_link">Resume</a>
+                </li>
+                <li class="nav_item">
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+                <li class="nav_item">
+                    <a href="wilburt.html" class="nav_link">Wilburt</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="hamburgerNav()">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-home">
+        <h1>
+            Developer. Solutions Architect. Person.
+        </h1>
+
+        <p>
+            Welcome to my page!
+        </p>
+
+        <span id="down">
+            &#8595;
+        </span>
     </section>
 
     <footer>
-        <div class="footer_main">
-            <div class="footer_box">
-                <p>
-                    Made with <span style="color:red;">&#10084;</span> and &#9749;
-                </p>
+        <div class="footer-content">
+            <div class="grid" id="icons">
+                <img class="box" id="social-media" src="./images/icons/facebook.png">
+                <img class="box" id="social-media" src="./images/icons/instagram.png">
+                <img class="box" id="social-media" src="./images/icons/linkedin.png">
+                <img class="box" id="social-media" src="./images/icons/email.png">
             </div>
 
-            <div class="footer_box">
-                <p>
-                    jmgallant301@gmail.com
-                </p>
+            <div>
+                <p class="copyright">© 2021 Josh Gallant</p>
             </div>
-
-            <div class="footer_box">
-                <p>
-                    2021, Brooklyn NY
-                </p>
-            </div>
-
         </div>
-
     </footer>
 
 </body>

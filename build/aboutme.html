@@ -8,36 +8,59 @@
     <title>Josh Gallant - About Me</title>
 
     <!-- External CSS -->
-    <link href="joshgallant-stylesheet.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 </head>
 
 <body class="not-home">
 
-    <section class="main">
+    <header class="header">
+
+        <!-- Name and Titles-->
+        <section class="name">
+            <h1>Josh Gallant</h1>
+        </section>
 
         <!-- Nav Menu -->
-        <nav class="nav_menu">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="resume.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="wilburt.html">My Cat</a></li>
+        <nav class="nav_bar">
+            <ul class="nav_menu" id="nav_menu">
+                <li class="nav_link">
+                    <a href="home.html" class="nav_link">Home</a>
+                </li>
+                <li class="nav_link">
+                    <a href="aboutme.html" class="nav_link">About</a>
+                </li>
+                <li class="nav_link">
+                    <a href="resume.html" class="nav_link">Resume</a>
+                </li>
+                <li class="nav_link">
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+                <li class="nav_link">
+                    <a href="wilburt.html" class="nav_link">Wilburt</a>
+                </li>
             </ul>
+            <div class="hamburger" id="hamburger" onclick="hamburgerNav()">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </div>
         </nav>
+    </header>
 
-        <div class="grid">
+    <section class="main">
+
+        <div class="grid-about" id=#about-me>
             
             <!-- Profile Pics -->
-            <section class="box">
-                <div class="images">
-                    <img src="joshgallant-profilepix.jpeg" alt="Image of Josh Gallant" width="400" class="rounded">
+            <section class="box-about">
+                <div>
+                    <img src="joshgallant-profilepix.jpeg" alt="Image of Josh Gallant" class="profile-pic">
                 </div>
             </section>
 
             <!-- Name and Titles-->
-            <section class="box">
+            <section class="box-about">
                 <div class="about">
                     <h2>About Me</h2>
                     <p>
@@ -63,27 +86,18 @@
     </section>
 
     <footer>
-        <div class="footer_main">
-            <div class="footer_box">
-                <p>
-                    Made with <span style="color:red;">&#10084;</span> and &#9749;
-                </p>
+        <div class="footer-content">
+            <div class="grid" id="icons">
+                <img class="box" id="social-media" src="./images/icons/facebook.png">
+                <img class="box" id="social-media" src="./images/icons/instagram.png">
+                <img class="box" id="social-media" src="./images/icons/linkedin.png">
+                <img class="box" id="social-media" src="./images/icons/email.png">
             </div>
 
-            <div class="footer_box">
-                <p>
-                    jmgallant301@gmail.com
-                </p>
+            <div>
+                <p class="copyright">© 2021 Josh Gallant</p>
             </div>
-
-            <div class="footer_box">
-                <p>
-                    2021, Brooklyn NY
-                </p>
-            </div>
-
         </div>
-
     </footer>
 
 </body>

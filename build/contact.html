@@ -5,25 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Gallant - Contact Me</title>
-    <link href="joshgallant-stylesheet.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
     <script type="text/javascript" src="contactFormValidation.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 
 </head>
 <body>
 
-    <section class="main">
-    
-      <!-- Nav Menu -->
-      <nav class="nav_menu">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="resume.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="wilburt.html">My Cat</a></li>
+  <header class="header">
+
+    <!-- Name and Titles-->
+    <section class="name">
+        <h1>Josh Gallant</h1>
+    </section>
+
+    <!-- Nav Menu -->
+    <nav class="nav_bar">
+        <ul class="nav_menu" id="nav_menu">
+            <li class="nav_link">
+                <a href="home.html" class="nav_link">Home</a>
+            </li>
+            <li class="nav_link">
+                <a href="aboutme.html" class="nav_link">About</a>
+            </li>
+            <li class="nav_link">
+                <a href="resume.html" class="nav_link">Resume</a>
+            </li>
+            <li class="nav_link">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+            <li class="nav_link">
+                <a href="wilburt.html" class="nav_link">Wilburt</a>
+            </li>
         </ul>
+        <div class="hamburger" id="hamburger" onclick="hamburgerNav()">
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+        </div>
     </nav>
+  </header>
+
+    <section class="main">
 
       <div class="grid">
 
@@ -60,29 +83,22 @@
         </section>
 
       </div>
+    
+    </section>
 
-      <footer>
-        <div class="footer_main">
-            <div class="footer_box">
-                <p>
-                    Made with <span style="color:red;">&#10084;</span> and &#9749;
-                </p>
-            </div>
+    <footer>
+      <div class="footer-content">
+          <div class="grid" id="icons">
+              <img class="box" id="social-media" src="./images/icons/facebook.png">
+              <img class="box" id="social-media" src="./images/icons/instagram.png">
+              <img class="box" id="social-media" src="./images/icons/linkedin.png">
+              <img class="box" id="social-media" src="./images/icons/email.png">
+          </div>
 
-            <div class="footer_box">
-                <p>
-                    jmgallant301@gmail.com
-                </p>
-            </div>
-
-            <div class="footer_box">
-                <p>
-                    2021, Brooklyn NY
-                </p>
-            </div>
-
-        </div>
-
+          <div>
+              <p class="copyright">© 2021 Josh Gallant</p>
+          </div>
+      </div>
     </footer>
 
 </body>

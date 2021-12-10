@@ -5,155 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Gallant - Resume</title>
-    <link href="joshgallant-stylesheet.css" rel="stylesheet">
+    <script type="text/javascript" src="resume.js"></script>
+    <link href="home.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
 <body>
 
-    <section class="main">
+    <header class="header">
+
+        <!-- Name and Titles-->
+        <section class="name">
+            <h1>Josh Gallant</h1>
+        </section>
 
         <!-- Nav Menu -->
-        <nav class="nav_menu">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="resume.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="wilburt.html">My Cat</a></li>
+        <nav class="nav_bar">
+            <ul class="nav_menu" id="nav_menu">
+                <li class="nav_link">
+                    <a href="home.html" class="nav_link">Home</a>
+                </li>
+                <li class="nav_link">
+                    <a href="aboutme.html" class="nav_link">About</a>
+                </li>
+                <li class="nav_link">
+                    <a href="resume.html" class="nav_link">Resume</a>
+                </li>
+                <li class="nav_link">
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+                <li class="nav_link">
+                    <a href="wilburt.html" class="nav_link">Wilburt</a>
+                </li>
             </ul>
+            <div class="hamburger" id="hamburger" onclick="hamburgerNav()">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </div>
         </nav>
+    </header>
 
-        <section class="resume">
-            <h1>
-                Resume
-            </h1>
-            
+    <section class="main">
+
             <section class="work">
 
                 <h2>
                     Employment
                 </h2>
 
-                <div class="grid" style="background-color: #678983; margin-top: 4rem;">
+                <hr>
 
-                    <section class="box_resume">
-                            <img src="/resume-pics/ordergroove.png" alt="Image of ordergroove logo">
-                    </section>
-
-                    <section class="box_resume">
-                        <div class="job">
-                            <h3>Ordergroove Inc.</h2>
-                            <h4>Solutions Consultant</h3>
-                            <p>2019 - Present</p>
-                            <p>
-        
-                            </p>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="grid" style="background-color: #678983; margin-top: 4rem;">
-
-                    <section class="box_resume">
-                            <img src="/resume-pics/paytronix.jpeg" alt="Image of paytronix logo">
-                    </section>
-
-                    <section class="box_resume">
-                        <div class="job">
-                            <h3>Paytronix Systems Inc.</h2>
-                                <h4>Technology Consultant</h3>
-                                <p>2017 - 2019</p>
-                            <p>
-        
-                            </p>
-                        </div>
-                    </section>
+                <div id="work-content">
                 </div>
 
             </section>
 
-            <section class="schol">
+            <section class="education">
 
                 <h2>
                     Education
                 </h2>
 
-                <div class="grid" style="background-color: #678983; margin-top: 4rem;">
+                <hr>
 
-                    <section class="box_resume">
-                            <img src="/resume-pics/bu.png" alt="Image of Boston University logo">
-                    </section>
-
-                    <section class="box_resume">
-                        <div class="job">
-                            <h3>Boston University</h2>
-                            <h4>Master's in Computer Information Systems</h3>
-                            <p>2018 - 2022</p>
-                            <p>
-        
-                            </p>
-                        </div>
-                    </section>
+                <div id="education-content">
                 </div>
 
-                <div class="grid" style="background-color: #678983; margin-top: 4rem;">
+            </section>
 
-                    <section class="box_resume">
-                            <img src="/resume-pics/umass.png" alt="Image of UMass Amherst Logo">
-                    </section>
+            <section class="skills">
 
-                    <section class="box_resume">
-                        <div class="job">
-                            <h3>University of Massachusetts - Amherst</h2>
-                            <h4>Bachelor's in Electrical Engineering</h3>
-                            <p>2013 - 217</p>
-                            <p>
-        
-                            </p>
-                        </div>
-                    </section>
+                <h2>
+                    Skills
+                </h2>
+
+                <hr>
+
+                <div id="skills-content">
+
                 </div>
 
             </section>
 
         </section>
-
-            <table class="skills">
-                <caption><h2>Career Skills</h2></caption>
-                <thead>
-                    <tr>
-                        <th>Technical</th>
-                        <th>Non-Technical</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>SQL and Data Migration</td>
-                        <td>Project Management</td>
-                    </tr>
-                    <tr>
-                        <td>REST APIs / Postman</td>
-                        <td>Training Documentation Writing</td>
-                    </tr>
-                    <tr>
-                        <td>Point-of-Sale Software</td>
-                        <td>Jira and Zendesk Management</td>
-                    </tr>
-                    <tr>
-                        <td>Various Programming Languages including Python and HTML</td>
-                        <td>SQL and Data Migration</td>
-                    </tr>
-                    <tr>
-                        <td>Ecommerce Software (Shopify, ATG, SFCC, BigCommerce)</td>
-                        <td>Microsoft Office</td>
-                    </tr>
-                    <tr>
-                        <td>Browser Debugging Tools</td>
-                        <td>Public Speaking</td>
-                    </tr>
-                </tbody>
-            </table>
 
         <div>
             <a href="resume.pdf" download><h1 style="margin-bottom:80px; text-align:center;">Download My Resume</h1></a>
@@ -162,27 +98,18 @@
     </section>
 
     <footer>
-        <div class="footer_main">
-            <div class="footer_box">
-                <p>
-                    Made with <span style="color:red;">&#10084;</span> and &#9749;
-                </p>
+        <div class="footer-content">
+            <div class="grid" id="icons">
+                <img class="box" id="social-media" src="./images/icons/facebook.png">
+                <img class="box" id="social-media" src="./images/icons/instagram.png">
+                <img class="box" id="social-media" src="./images/icons/linkedin.png">
+                <img class="box" id="social-media" src="./images/icons/email.png">
             </div>
 
-            <div class="footer_box">
-                <p>
-                    jmgallant301@gmail.com
-                </p>
+            <div>
+                <p class="copyright">© 2021 Josh Gallant</p>
             </div>
-
-            <div class="footer_box">
-                <p>
-                    2021, Brooklyn NY
-                </p>
-            </div>
-
         </div>
-
     </footer>
 
 </body>

@@ -1,11 +1,8 @@
-//Nav Menu JS 
-
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+//Nav Menu JS s
 function hamburgerNav() {
-    var x = document.getElementById("nav_menu");
-    if (x.className === "nav_menu") {
-      x.className += " responsive";
-    } else {
-      x.className = "nav_menu";
-    }
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav_menu');
+    console.log(hamburger, navMenu)
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
