@@ -570,7 +570,6 @@ input[type="submit"]:hover{
 
 /*
 ###############################
-<<<<<<< HEAD
 Contact
 ###############################
 */
@@ -578,30 +577,6 @@ Contact
     border: 1px solid #ccc;
     padding: 0 6px;
     display: flex;
-=======
-Wilburt
-###############################
-*/
-
-.wilburt-container { 
-    width: 80vw; 
-    margin: 0 auto; 
-} 
-.wilburt-button-wrapper { 
-    display: flex; 
-    justify-content: center; 
-    margin-bottom: 25px; 
-} 
-.wilburt-btn { 
-    font-size: 18px; 
-    background-color: #42b983; 
-    color: white; padding: 10px 20px;
-}
-
-.image-gallery {
-    border: 1px solid #ccc;
-    padding: 0 6px; 
->>>>>>> 0fc01761c597aa4cfadd25e6166d792093683ba0
 }
 
 .image-gallery img:hover {
@@ -615,12 +590,6 @@ Wilburt
     display: flex;
 }
 
-<<<<<<< HEAD
-
-@media only screen and (max-width: 700px) {
-    .image-gallery img{
-        width: 49.99999%;
-=======
 .image-row {
     display: flex;
     flex-direction: row;
@@ -640,16 +609,10 @@ Wilburt
 @media only screen and (max-width: 700px) {
     .image-gallery img{
         width: 100%;
->>>>>>> 0fc01761c597aa4cfadd25e6166d792093683ba0
         margin: 6px 0;
     }
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 500px) {
-    .image-gallery {
-        width: 100%;
-=======
 @media only screen and (max-width: 700px) {
     .image-gallery {
         width: 100%;
@@ -658,7 +621,6 @@ Wilburt
 
     .image-row {
         display: inline-block;
->>>>>>> 0fc01761c597aa4cfadd25e6166d792093683ba0
     }
 }
 
