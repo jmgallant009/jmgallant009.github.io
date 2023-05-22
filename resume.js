@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                 </div>
 
-                <hr>
             `;
             
             newDiv.innerHTML = workHTML;
@@ -95,8 +94,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     </p>
     
                 </div>
-    
-                <hr>
             `;
             
             newDiv.innerHTML = educationHTML;
