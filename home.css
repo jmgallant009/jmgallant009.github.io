@@ -532,6 +532,50 @@ input[type="submit"]:hover{
 #message {
     line-height:200px;  
 }
+
+/*
+###############################
+Contact
+###############################
+*/
+.image-gallery {
+    border: 1px solid #ccc;
+    padding: 0 6px;
+    display: flex;
+}
+
+.image-gallery img:hover {
+    border: 1px solid #777;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .image-gallery img{
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .image-gallery {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /*
 ###############################
 Footer
